@@ -1,209 +1,202 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
-\begin{center}
-    \textbf{\Huge \scshape RAJ MATHUR} \\ \vspace{1pt}
-    \small +91 8340637097 $|$ \href{mailto:x@x.com}{\underline{rajmathur8409@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/raj-mathur-778181258/}} $|$
-    \href{https://github.com/...}{\underline{github.com/Rajmathur-8}}
-\end{center}
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {International Institute of Information Technology}{Bhubanewar, Odisha}
-      {Bachelor of technology in Computer Science, 2nd year}{Nov. 2022 -- April 2026}
-      
-     { {CGPA - 7.54 (till 3rd sem)}}
-      
-    \resumeSubheading
-      {Golden Bell Public School}{Bihar Sharif , Bihar}
-      {Higher Secondary Education}{2019 - 2021}
-      
-      { {Percentage - 81.6  $%$}}
-
-  \resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------
-%\section{Experience}
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-          {\textbf{Social media Backend } $|$ \emph{\textbf{ Spring boot, spring security, MySQL, JPA } }}{}
-          \resumeItemListStart
-            \resumeItem{Developed robust \textbf{backend} systems using \textbf{Spring Boot} to handle key functionalities like \textbf{post creation, liking, saving, reposting, and commenting,} ensuring smooth data flow and enhanced user engagement .}
-            \resumeItem{ Implemented \textbf{real-time messaging} capabilities leveraging \textbf{Spring Security} and \textbf{WebSockets} for seamless and secure communication.}
-            \resumeItem{Utilized \textbf{MySQL} for \textbf{database management}, ensuring efficient storage and retrieval of user data, posts, messages. Implemented \textbf{JPA and Hibernate for ORM,} streamlining database interactions and \textbf{maintaining data consistency.}}
-             \resumeItem{Built comprehensive \textbf{user profile management} features allowing users to \textbf{update profiles} and \textbf{manage connections through follow/unfollow actions}, ensuring data integrity and security.}
-          \resumeItemListEnd
-     \resumeProjectHeading
-          {\textbf{ online Delivery Backend $|$ Spring boot, spring security, MySQL, JPA }   } {}
-% {march 2024}
-          \resumeItemListStart
-            \resumeItem{Led the development of an online food delivery app using \textbf{Spring Boot} for \textbf{backend services},  and \textbf{Spring Security with JWT} for robust \textbf{user authentication and secure session management.}}
-             \resumeItem{Utilized \textbf{MySQL} for managing the app's \textbf{database}, ensuring efficient data storage, retrieval, and management. Implemented \textbf{JPA} and \textbf{Hibernate} for \textbf{ORM} (Object-Relational Mapping) to streamline database interactions. }
-              \resumeItem{Implemented \textbf{role-based access control} to differentiate user permissions for \textbf{customers and owners}, providing personalized experiences and \textbf{secure data access}. }
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Todo Management App} $|$ \emph{\textbf{Java, SpringBoot, React, Jpa , Hibernate, Spring Security}}}
-          
-          \resumeItemListStart
-            \resumeItem{Created a robust Todo application employing \textbf{Java, Spring Boot, Hibernate, React, and Spring Security.}}
-             \resumeItem{Implemented \textbf{CRUD functionalities} ensuring seamless task management.}
-              \resumeItem{Integrated Spring Security for\textbf{ authentication and authorization}, bolstering data security. }
-               \resumeItem{Designed an intuitive user interface for enhanced user experience and developed\textbf{ RESTful APIs }for efficient data exchange between frontend and backend. }
-                \resumeItem{Utilized\textbf{ agile methodologies} for iterative development cycles, ensuring rapid project progression and responsiveness to user feedback.}
-           \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
-%-----------PROGRAMMING SKILLS-----------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.94]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Raj Mathur}{}
+\phone[mobile]{(+91) 8340637097}                   % optional, remove / comment the line if not wanted
+\email{mathurraj188@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://www.linkedin.com/in/raj-mathur-778181258/}   
+ % optional, remove / comment the line if not wanted
+\extrainfo{https://github.com/Rajmathur-8}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Education}
+
+\vspace{0pt}
+
+\begin{itemize}
+
+\item{\cventry{2022 - Present }{Bachelor of Technology in Computer Science and Engineering}{International Institute of Information Technology Bhubaneswar}{Bhubaneswar, Odisha, India}{\textit{}}{}}
+{CGPA : 7.61 (Till 4th semester) }
+\vspace{1pt}
+ \item{\cventry{2019 - 2021 }{Higher Secondary Education}{Golden Bell Public School}{Bihar Sharif, Bihar, India}{\textit{}}{}}
+{Percentage : 81.6 \% }
+\vspace{1pt}
+\end{itemize}
+%-------------------------------------------------------------------------------------------
+% \section{Work Experience}
+
+% \vspace{1pt}
+
+% \begin{itemize}
+
+% \item{\cventry{October 2016 - Present}{\textbf{Evaluation Analyst Intern}}{\textbf{University of California, Santa Cruz - Educational Partnership Center}}{Santa Cruz, CA}{}{\vspace{3pt} Assist with data collection and analysis from school districts; such as demographic, academic performance and survey data.
+% \vspace{3pt}\\• Created simple SQL code with Microsoft Access to accelerate the manipulation of data.\\• Analyzed and generated reports about student and parent data.
+% \\
+% \cventry{August 2016 - October 2016}{\textbf{Lead Data Entry Assistant}}{}{Santa Cruz, CA}{}{Assist in data collections projects by being a conduit of communication from the Manager to Data Entry Assistants.\\• Managed multiple projects with tight deadlines and supervised three other employees.\\• Improved the management of projects by implementing task tracking methods.}
+% \cventry{July 2016 - August 2016}{\textbf{Data Manager Assistant/Data Entry}}{}{Santa Cruz, CA}{}{Provide assistance with research projects by updating, maintaining, and processing files and databases.\\• Processed more than 3000 sensitive student files and information in database systems such as SCRIBE and CoBro. \\• Assisted and oversaw 2 new interns with  database, file management and data training.}
+% }
+
+
+% \vspace{6pt}
+
+% \item{\cventry{June 2014 - September 2015}{\textbf{Web Development and Marketing Manager}}{\textbf{Ofimática S.A.}}{Medellin, Colombia/Online}{}{Plan, create and deploy marketing campaigns to increase sales and improve the branding of the company.\\• Implemented online marketing strategies through Google AdWords that increased sales by 12\%.\\• Tailored the marketing strategy and web services to the commercial goals of the company.}
+
+% \cventry{July 2013 - June 2014}{\textbf{Digital Marketing Specialist}}{}{Medellin, Colombia/Online}{}{Employ Google Analytics to improve the performance of the online marketing strategy.\\• Increased the online presence of the company by designing an effective website with HTML, CSS and JavaScript.\\• Conducted research to position the brand in the marketplace for software with Google Analytics.}
+% }}
+
+% \vspace{1pt}
+
+% \end{itemize}
+% %------------------------------------------------------------------------------------------
+\section{Software Projects}
+\vspace{1pt}
+\begin{itemize}
+    \item{\cventry
+        {} 
+        {\href{https://github.com/Rajmathur-8/Book-Buddies}{\textbf{Book Social Network}}}
+        {} 
+        {} 
+        {}
+        {
+            \vspace{3pt}
+            \textbf{Description:} Full-stack application for book collection management and community engagement, featuring \textbf{secure user registration}, \textbf{JWT authentication}, and comprehensive book management. \\
+            \textbf{Technologies:} \textbf{Spring Boot 3, Spring Security 6, Angular, JWT, Docker, GitHub Actions, OpenAPI, Bootstrap} \\
+            \textbf{Key Contributions:}
+            \begin{itemize}
+                \item Implemented \textbf{user registration and JWT authentication}.
+                \item Developed \textbf{RESTful APIs} with \textbf{OpenAPI documentation}.
+                \item Used \textbf{Spring Data JPA} and \textbf{JSR-303} for data management and validation.
+                \item \textbf{Dockerized} the app and set up \textbf{CI/CD pipelines}.
+                \item Enhanced frontend performance with \textbf{Angular lazy loading}.
+            \end{itemize}
+        }
+    }
+
+    \vspace{1pt}
+    \item{\cventry
+        {} 
+        {\href{https://github.com/Rajmathur-8/social-media-app-backend}{\textbf{Social Media App Backend}}}
+        {} 
+        {} 
+        {}
+        {
+            \vspace{3pt}
+            \textbf{Technologies:} \textbf{Spring Boot, Spring Security, MySQL, JPA} \\
+            \textbf{Key Contributions:}
+            \begin{itemize}
+                \item Built a \textbf{backend system} for post management and user interactions.
+                \item Implemented \textbf{real-time messaging} with \textbf{Spring Security} and \textbf{WebSockets}.
+                \item Managed data with \textbf{MySQL} and \textbf{JPA/Hibernate}.
+                \item Developed \textbf{user profile management} features.
+            \end{itemize}
+        }
+    }
+
+    \vspace{1pt}
+    \item{\cventry
+        {} 
+        {\href{https://github.com/Rajmathur-8/WalletWise}{\textbf{Expense Tracker App}}}
+        {} 
+        {} 
+        {}
+        {
+            \vspace{3pt}
+            \textbf{Technologies:} \textbf{Spring Boot, Spring Security, Spring Web, Spring Data JPA, JWT, HTML, CSS, JavaScript, React} \\
+            \textbf{Key Contributions:}
+            \begin{itemize}
+                \item Developed an expense tracker with \textbf{user authentication} and \textbf{JWT security}.
+                \item Created a \textbf{dashboard} for expense management and reports.
+                \item Added \textbf{filtering options} for expenses by date, category, and more.
+                \item Designed backend services for \textbf{authentication}, \textbf{reporting}, and \textbf{management}.
+            \end{itemize}
+        }
+    }
+\end{itemize}
+
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{\textbf{: Java, Python, C/C++, SQL (MySql), NoSQL( MongoDb), JavaScript, HTML/CSS, }} \\
-     \item \textbf{Frameworks}{:}\textbf{ React, SpringBoot , JPA , Hibernate, Spring Security}
-     \item  \\\textbf{Developer Tools}{:} \textbf{Git / Github , Docker, AWS, VS Code, Visual Studio, Eclipse, Intellij Idea}\textbf{, }canva, Codeblocks
-     \item \textbf{Others}{:}\textbf{ REST APIs , Data Structures and Algorithms, OOPs,  DBMS, Problem Solving}\textbf{, Project Management, Leadership, Teamwork, Analytical Thinking}
-    }}
- \end{itemize}
-%-----------Achievements-----------
+\vspace{1pt}
+\begin{itemize}
+    \item \textbf{Languages:} Java, Python, C/C++, SQL (MySQL), NoSQL (MongoDB), JavaScript, HTML/CSS
+    \item \textbf{Frameworks:} React, Angular, Spring Boot, JPA, Hibernate, Spring Security
+    \item \textbf{Developer Tools:} Git/GitHub, Docker, VS Code, Visual Studio, Eclipse, IntelliJ IDEA
+    \item \textbf{Other Skills:} REST APIs, Data Structures and Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Problem Solving, Project Management, Leadership, Teamwork, Analytical Thinking
+\end{itemize}
 \section{Achievements}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{- Leetcode, rating - 1609 (350+ questions solved)} \\
-     \textbf{- HACKATHON :  Hackfest (Top 4 out of 100+ teams)  Developed an end to end project for farmers by integrating ML and Blockchain technology.} \\
- {\textbf{- HACKATHON :   Smart Speedathon (Top 3) Developed an AI based ML model for College and Course recommendation system and made an end to end website for students integrating a chatbot.}
- \end{itemize}
+
+\begin{itemize}
+    \item \textbf{LeetCode Rating:} 1695 (450+ questions solved)
+    \item \textbf{Hackathons:}
+        \begin{itemize}
+
+            \item \textbf{The Innovation:} Runner-Up - Created a project showcasing innovative solutions.
+            \item \textbf{Hackfest:} Top 4 out of 120 teams - Developed an end-to-end project for farmers integrating \textbf{Machine Learning} and \textbf{Blockchain} technologies.
+            \item \textbf{GeoHack:} Finalist - Contributed to a project with significant geographical impact.
+        \end{itemize}
+\end{itemize}
 
 
-%-------------------------------------------
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
 \end{document}
+
+
+%% end of file `template.tex'.
